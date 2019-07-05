@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="oAuthXamarin.UserInfo">
+    <ContentPage.Content>
+        <StackLayout>
+            
+            <Label Text="User Name:" />
+            <Label x:Name="userName" />
+
+            <Label Text="Email:" />
+            <Label x:Name="userEmail" />
+
+            <Image x:Name="userPicture" />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

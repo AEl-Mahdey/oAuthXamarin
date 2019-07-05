@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:oAuthXamarin"
+             x:Class="oAuthXamarin.MainPage">
+
+    <StackLayout>
+        <Label Text="oAuth Tutorial!" 
+           HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand" />
+        
+        <StackLayout>
+            <Button x:Name="FacebookLogin" Text="Facebook" Clicked="OnFacebookLoginClicked" />
+        </StackLayout>
+
+        <StackLayout>
+            <Button x:Name="MicrosoftLogin" Text="Microsoft" Clicked="OnMicrosoftLoginClicked"/>
+        </StackLayout>
+
+        <StackLayout>
+            <Button  x:Name="TwitterLogin" Text="Twitter"/>
+        </StackLayout>
+
+        <StackLayout>
+            <Button  x:Name="GoogleLogin" Text="Google" Clicked="OnGoogleLoginClicked"/>
+        </StackLayout>
+    </StackLayout>
+
+
+
+
+
+</ContentPage>
