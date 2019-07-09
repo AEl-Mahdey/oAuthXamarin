@@ -4,28 +4,40 @@
              xmlns:local="clr-namespace:oAuthXamarin"
              x:Class="oAuthXamarin.MainPage">
 
+   
     <StackLayout>
-        <Label Text="oAuth Tutorial!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
         
-        <StackLayout>
-            <Button x:Name="FacebookLogin" Text="Facebook" Clicked="OnFacebookLoginClicked" />
+        <StackLayout x:Name="LoginElements">
+            <Label Text="oAuth Tutorial!" 
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand" />
+        
+            <StackLayout>
+                <Button x:Name="FacebookLogin" Text="Facebook" Clicked="OnFacebookLoginClicked" />
+            </StackLayout>
+
+            <StackLayout>
+                <Button x:Name="MicrosoftLogin" Text="Microsoft" Clicked="OnMicrosoftLoginClicked"/>
+            </StackLayout>
+
+            <StackLayout>
+                <Button  x:Name="TwitterLogin" Text="Twitter"/>
+            </StackLayout>
+
+            <StackLayout>
+                <Button  x:Name="GoogleLogin" Text="Google" Clicked="OnGoogleLoginClicked"/>
+            </StackLayout>
         </StackLayout>
 
-        <StackLayout>
-            <Button x:Name="MicrosoftLogin" Text="Microsoft" Clicked="OnMicrosoftLoginClicked"/>
+        <StackLayout x:Name="UserElements">
+            
+            <Label x:Name="FirstName" Text="User Name:" />
+            <Label x:Name="userEmail" Text="Email:" />
+            <Image x:Name="userPicture"/>
+            
         </StackLayout>
 
-        <StackLayout>
-            <Button  x:Name="TwitterLogin" Text="Twitter"/>
-        </StackLayout>
-
-        <StackLayout>
-            <Button  x:Name="GoogleLogin" Text="Google" Clicked="OnGoogleLoginClicked"/>
-        </StackLayout>
     </StackLayout>
-
 
 
 

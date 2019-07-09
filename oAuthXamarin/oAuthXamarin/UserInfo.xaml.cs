@@ -1,23 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Xamarin.Forms;
+﻿using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 
 
 namespace oAuthXamarin
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
+    [XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class UserInfo : ContentPage
 	{
-		public UserInfo ()
+		public UserInfo (User user)
 		{
 			InitializeComponent ();
+            userName.Text = user.FirstName;
+            userEmail.Text = user.Email;
+            userPicture.Source = user.Picture;
 		}
 
+        
+        
 
 	}
 }

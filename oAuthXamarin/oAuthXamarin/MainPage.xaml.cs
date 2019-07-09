@@ -17,13 +17,12 @@ namespace oAuthXamarin
         Account account;
         AccountStore store;
         string appName = "Scribe";
-        UserInfo userinfo = new UserInfo();
-        User user = new User();
         
         public MainPage()
         {
             InitializeComponent();
-            store = AccountStore.Create(); 
+            store = AccountStore.Create();
+            UserElements.IsVisible = false; 
         }
 
         public void OnFacebookLoginClicked(object sender, EventArgs e)
@@ -155,8 +154,10 @@ namespace oAuthXamarin
                     store.Delete(account, appName);
                 }
 
-                await store.SaveAsync(account = e.Account, appName);
-                await DisplayAlert("Email address", user.Email, "OK");
+                FirstName.Text += user.FirstName;
+                userEmail.Text += user.Email;
+                userPicture.Source = user.Picture;
+                RearrangePage();
             }
         }
 
@@ -193,6 +194,12 @@ namespace oAuthXamarin
                 await store.SaveAsync(account = e.Account, appName);
                 await DisplayAlert("Email address", user.Email, "OK");
             }
+        }
+
+        public void RearrangePage()
+        {
+            LoginElements.IsVisible = false;
+            UserElements.IsVisible = true;
         }
 
         async void OnAuthError(object sender, AuthenticatorErrorEventArgs e)

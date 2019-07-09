@@ -15,7 +15,7 @@ namespace oAuthXamarin
         public static string googleiOSClientId = "367693767145-dninkab2s8jk37tbgt6mpm84m8p8agfq.apps.googleusercontent.com";
         public static string googleAndroidId = "367693767145-lm6k6hv82rgr7ctr473qq1e23srvdt5n.apps.googleusercontent.com";
         public static string googleRedirectUri = "https://google.com";
-        public static string googleScope = "https://www.googleapis.com/auth/userinfo.email";
+        public static string googleScope = "https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email ";
         public static string googleAuthorizeUrl = "https://accounts.google.com/o/oauth2/auth";
         public static string googleAccessTokenUrl = "https://www.googleapis.com/oauth2/v4/token";
         public static string googleUserInfoUrl = "https://www.googleapis.com/oauth2/v2/userinfo";

@@ -5,13 +5,13 @@
     <ContentPage.Content>
         <StackLayout>
             
-            <Label Text="User Name:" />
+            <Label Text="User Name:"  />
             <Label x:Name="userName" />
 
             <Label Text="Email:" />
             <Label x:Name="userEmail" />
 
-            <Image x:Name="userPicture" />
+            <Image x:Name="userPicture"  />
 
         </StackLayout>
     </ContentPage.Content>
