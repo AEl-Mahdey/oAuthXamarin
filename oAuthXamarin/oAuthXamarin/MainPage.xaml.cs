@@ -9,6 +9,7 @@ using Xamarin.Auth;
 using Newtonsoft.Json;
 using System.Net.Http;
 
+
 namespace oAuthXamarin
 {
     public partial class MainPage : ContentPage
@@ -51,11 +52,11 @@ namespace oAuthXamarin
             account = store.FindAccountsForService(appName).FirstOrDefault();
 
             var authenticator = new OAuth2Authenticator(
-                Constants.googleAndroidId,
+                Constants.googleiOSClientId,
                 null,
                 Constants.googleScope,
                 new Uri(Constants.googleAuthorizeUrl),
-                new Uri(Constants.AndroidRedirectUrl),
+                new Uri(Constants.iOSRedirectUrl),
                 new Uri(Constants.googleAccessTokenUrl),
                 null,
                 true);
@@ -138,8 +139,7 @@ namespace oAuthXamarin
             User user = null;
             if (e.IsAuthenticated)
             {
-                // If the user is authenticated, request their basic user data from Google
-                // UserInfoUrl = https://www.googleapis.com/oauth2/v2/userinfo
+
                 var request = new OAuth2Request("GET", new Uri(Constants.googleUserInfoUrl), null, e.Account);
                 var response = await request.GetResponseAsync();
                 if (response != null)

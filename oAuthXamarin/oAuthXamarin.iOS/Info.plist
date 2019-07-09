@@ -43,25 +43,21 @@
 			<array>
 				<string>com.googleusercontent.apps.367693767145-dninkab2s8jk37tbgt6mpm84m8p8agfq</string>
 			</array>
-			<key>CFBundleURLTypes</key>
+		</dict>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string>FB URI</string>
+			<key>CFBundleURLSchemes</key>
 			<array>
-				<dict>
-					<key>CFBundleURLSchemes</key>
-					<array>
-						<string>fb1334985533332987</string>
-					</array>
-				</dict>
+				<string>1334985533332987</string>
 			</array>
-			<key>FacebookAppID</key>
-			<string>1334985533332987</string>
-			<key>FacebookDisplayName</key>
-			<string>Scribe</string>
-			<key>LSApplicationQueriesSchemes</key>
+		</dict>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string>fb again</string>
+			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>fbapi</string>
-				<string>fb-messenger-api</string>
-				<string>fbauth2</string>
-				<string>fbshareextension</string>
+				<string>fb1334985533332987://authorize</string>
 			</array>
 		</dict>
 	</array>

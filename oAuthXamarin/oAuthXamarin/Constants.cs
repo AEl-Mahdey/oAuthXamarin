@@ -7,8 +7,8 @@ namespace oAuthXamarin
     public static class Constants
     {
         public static string facebookClientId = "1334985533332987";
-        public static string facebookRedirectUri = $"fb{facebookClientId}://authorize";
-        public static string facebookAuthorizeUri = "https://www.facebook.com/dialog/oauth/";
+        public static string facebookRedirectUri = "fb1334985533332987://authorize";
+        public static string facebookAuthorizeUri = "https://www.facebook.com/v3.3/dialog/oauth";
         public static string facebookUserInfoUrl = "https://graph.facebook.com/me?fields=email&access_token={accessToken}";
 
         public static string googleClientId = "367693767145-5is18uoojs3ov2umu3jscbcjbdophdjt.apps.googleusercontent.com";
